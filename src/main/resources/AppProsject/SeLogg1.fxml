@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="background" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: grey;" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="AppProsject.SeLogg1Controller">
+   <children>
+      <Label layoutX="164.0" layoutY="20.0" text="Logg:">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Label>
+      <Label fx:id="målNavnEndelig" layoutX="244.0" layoutY="20.0">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Label>
+      <TextArea fx:id="logg1" layoutX="47.0" layoutY="53.0" prefHeight="198.0" prefWidth="494.0" />
+      <Label fx:id="snittInnsats" layoutX="256.0" layoutY="290.0" prefHeight="25.0" prefWidth="78.0" />
+      <Button layoutX="473.0" layoutY="14.0" mnemonicParsing="false" onAction="#backtoMål1" text="Tilbake til Mål1" />
+      <Button layoutX="32.0" layoutY="290.0" mnemonicParsing="false" onAction="#Seinnsats" text="Se gjennomsnittlige innsatspoeng:" />
+      
+   </children>
+</AnchorPane>

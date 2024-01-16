@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="background" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: grey;" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="AppProsject.Logg1Controller">
+   <children>
+      <Label fx:id="målNavnEndelig" layoutX="267.0" layoutY="154.0" prefHeight="37.0" prefWidth="314.0">
+         <font>
+            <Font size="22.0" />
+         </font>
+      </Label>
+      <Label layoutX="27.0" layoutY="209.0" prefHeight="20.0" prefWidth="143.0" text="Innsatspoeng(1-10):" />
+      <TextField fx:id="innsats" layoutX="149.0" layoutY="207.0" />
+      <Label layoutX="36.0" layoutY="14.0" text="Gjorde Bra:" />
+      <TextArea fx:id="gjordebra" layoutX="36.0" layoutY="37.0" prefHeight="117.0" prefWidth="231.0" />
+      <Label layoutX="21.0" layoutY="258.0" text="Forbedre: " />
+      <TextArea fx:id="forbedre" layoutX="21.0" layoutY="275.0" prefHeight="110.0" prefWidth="200.0" />
+      <Label layoutX="285.0" layoutY="211.0" />
+      <Label fx:id="tilbakemelding" layoutX="229.0" layoutY="296.0" prefHeight="26.0" prefWidth="367.0" />
+      <Button layoutX="229.0" layoutY="353.0" mnemonicParsing="false" onAction="#sendLoggA" text="Send inn Logg" />
+      <Button layoutX="499.0" layoutY="19.0" mnemonicParsing="false" onAction="#tilbakeTilMål1" text="Tilbake" />
+      <Label layoutX="386.0" layoutY="336.0" text="Hold loggen kort" />
+      <Label layoutX="390.0" layoutY="357.0" text="(Skriv stikkord)" />
+   </children>
+</AnchorPane>
